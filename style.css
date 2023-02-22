@@ -28,19 +28,20 @@ a{
 
 .logo img{
     width: 100px;
+    cursor: pointer ;
 }
 
 .search input[type='search']{
     width: 400px;
     padding: 0.5rem;
-    border-radius: 2px;
+    border-radius: 20px;
     border: 1px solid #ccc;
 }
 
 .button{
     padding: 0.25rem 1.5rem;
     border: 1px solid #2c5fd5;
-    border-radius: 2px;
+    border-radius: 20px;
     color: #2c5fd5;
     font-weight: bold;
     text-decoration: none;
@@ -52,6 +53,10 @@ a{
     background-color: #fb2300;
     color: white;
     text-transform: uppercase;
+}
+
+.subscribe .button:hover{
+    background-color: #ce1e03;
 }
 
 main{
@@ -93,6 +98,7 @@ main{
     grid-area: video-info;
 
     padding: 0 0 1rem 1rem;
+    
 }
 
 .video-info h1{
@@ -109,16 +115,15 @@ main{
     grid-area: actions;
 
     border-bottom: 1px solid #ddd;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: 0 0 0.5rem 10rem;
     color: #636363;
 
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: space-evenly;
     align-items: end;
-    grid-gap: 1rem;
-
-    
+    grid-gap: 0.1rem;
+    cursor: pointer;
 }
 
 .action{
@@ -128,6 +133,14 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 0.7rem;
+    padding: 4px;
+    background-color: #e4e4e4;
+    border-radius: 20px;
+}
+
+.action:hover{
+    background-color: #ccc;
+    color: black;
 }
 
 .action svg{
@@ -150,6 +163,7 @@ main{
     grid-template-columns: auto auto;
     justify-content: start;
     grid-gap: 1rem;
+    cursor: pointer;
 }
 
 .channel img{
@@ -165,6 +179,7 @@ main{
 
 .channel .channel-description{
     font-size: 0.8rem;
+    cursor: text;
 }
 
 .subscribe{
@@ -183,24 +198,33 @@ main{
     text-align: center;
     background-color: #2196f3;
     color: white;
-    
+    max-width: 350px;
+    border-radius: 5px;
 }
 
 .up-next{
     grid-area: up-next;
 
     margin: 1rem;
+    max-width: 350px;
 }
 
 .up-next a{
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 0.5rem;
+    grid-template-columns: 5fr 5fr;
+    grid-gap: .1rem;
     padding-bottom: 0.75rem;
 }
 
-up-next img{
+.up-next a:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.up-next img{
     width: 100%;
+    border-radius: 5px;
 }
 
 .up-next h4{
@@ -226,7 +250,7 @@ up-next img{
         grid-template-columns: auto auto auto;
     }
     main{
-        max-width: 1200px;
+        max-width: 1400px;
 
         grid-template-areas: 
         'video-player video-player ad'
@@ -239,4 +263,10 @@ up-next img{
     .video-info{
         border-bottom: 1px solid #ddd;
     }
+    .up-next h4{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        -webkit-box-orient: vertical; 
+      }
 }
