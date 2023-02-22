@@ -45,7 +45,7 @@ main{
     margin: auto;
 
     display: grid;
-    /*grid-row-gap: 1rem;*/
+    grid-row-gap: 1rem;
 
     grid-template-areas: 
         'video-player video-player'
