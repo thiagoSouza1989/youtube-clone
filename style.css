@@ -115,7 +115,7 @@ main{
     grid-area: actions;
 
     border-bottom: 1px solid #ddd;
-    padding: 0 0.3rem 0.5rem 5rem;
+    padding: 0 1rem 0.5rem 4rem;
     color: #636363;
 
     display: grid;
@@ -240,13 +240,13 @@ main{
     font-size: 0.9rem;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:928px){
     .search, .ad{
         display: none;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 928px) {
     header{
         grid-template-columns: auto auto auto;
     }
