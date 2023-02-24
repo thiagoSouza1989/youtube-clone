@@ -115,14 +115,14 @@ main{
     grid-area: actions;
 
     border-bottom: 1px solid #ddd;
-    padding: 0 1rem 0.5rem 4rem;
+    padding: 0 1rem 0.5rem 1rem;
     color: #636363;
 
     display: grid;
     grid-template-columns: repeat(5, auto);
-    justify-content: space-evenly;
+    justify-content: end;
     align-items: end;
-    grid-gap: 0.1rem;
+    grid-gap: 0.5rem;
     cursor: pointer;
 }
 
@@ -240,13 +240,13 @@ main{
     font-size: 0.9rem;
 }
 
-@media screen and (max-width:928px){
+@media screen and (max-width:1028px){
     .search, .ad{
         display: none;
     }
 }
 
-@media screen and (min-width: 928px) {
+@media screen and (min-width: 1028px) {
     header{
         grid-template-columns: auto auto auto;
     }
@@ -261,7 +261,7 @@ main{
         '.            .            up-next';
     }
     .actions{
-        padding: 0 0 0.5rem 10rem;
+        padding: 0 1rem 0.5rem 1rem;
     }
 
     .video-info{
