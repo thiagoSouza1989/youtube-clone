@@ -119,7 +119,7 @@ main{
     color: #636363;
 
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(7, auto);
     justify-content: end;
     align-items: end;
     grid-gap: 0.5rem;
@@ -151,6 +151,14 @@ main{
 
 .action:last-child{
     grid-template-columns: auto;
+}
+
+#clipe{
+    display: none;
+}
+
+#save{
+    display: none;
 }
 
 .channel{
@@ -239,6 +247,17 @@ main{
     color: #888;
     font-size: 0.9rem;
 }
+
+@media screen and (min-width:700px){
+    #clipe{
+        display: grid;
+    }
+    
+    #save{
+        display: grid;
+    }
+}
+
 
 @media screen and (max-width:1028px){
     .search, .ad{
