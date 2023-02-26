@@ -41,7 +41,7 @@
                 <div class="action" id="contador" onclick="incrementar()">
                     <svg><g><path d="M3,11h3v10H3V11z M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11v10h10.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z"></path>
                     </g></svg>
-                    <span id="resultado">90</span>
+                    <span id="resultado">909</span>
                 </div>
 
 
@@ -131,7 +131,7 @@
                 </div>
             </a>
 
-            <a href="page6.html"><img src="https://img.youtube.com/vi/gfcnvG7Iha8/mqdefault.jpg" alt="Thumbnail">
+            <a href="pages/page6.html"><img src="https://img.youtube.com/vi/gfcnvG7Iha8/mqdefault.jpg" alt="Thumbnail">
             
                 <div class="video-details">
                     <h4>Hinos CCB Sax e Piano</h4>
@@ -140,27 +140,6 @@
             </a>
         </section>
     </main>
-    <script>
-        let contador = 90;
-        function incrementar() {
-            contador++;
-            document.getElementById("resultado").innerHTML = contador;
-        }    
-        
-        let contador2 = 0;
-        function incrementar2() {
-            contador2++;
-            document.getElementById("resultado2").innerHTML = contador2;
-        }  
-
-        var inscrever = document.getElementById('inscrito')
-        inscrever.addEventListener('click', clicar)
-
-        function clicar (){
-            inscrever.innerText = 'Inscrito'
-            document.body.querySelector('#inscrito').style.background = 'black'
-        }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
