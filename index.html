@@ -90,7 +90,7 @@
         </section>
 
         <section class="subscribe">
-            <a href="#" class="button">Inscrever-se</a>
+            <a href="#" class="button" id="inscrito">Inscrever-se</a>
         </section>
 
         <section class="ad">
@@ -152,6 +152,14 @@
             contador2++;
             document.getElementById("resultado2").innerHTML = contador2;
         }  
+
+        var inscrever = document.getElementById('inscrito')
+        inscrever.addEventListener('click', clicar)
+
+        function clicar (){
+            inscrever.innerText = 'Inscrito'
+            document.body.querySelector('#inscrito').style.background = 'black'
+        }
 
     </script>
 </body>
