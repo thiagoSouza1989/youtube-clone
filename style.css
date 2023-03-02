@@ -133,6 +133,7 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 0.7rem;
+    font-weight: bold;
     padding: 4px;
     background-color: #e4e4e4;
     border-radius: 20px;
@@ -153,6 +154,41 @@ main{
     grid-template-columns: auto;
 }
 
+.menu{
+    display: none;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+}
+
+.menu{
+    z-index: 2;
+    top: 2px;
+    height: 36px;
+    width: 198px;
+    border: 1px solid #dfe4e7;
+    outline: none;
+    padding-left: 34px;
+    border-radius: 4px;
+    background: transparent;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+#plus{
+    top: 13px;
+    left: 10px;
+    z-index: 3;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+/*
 #clipe{
     display: none;
 }
@@ -160,6 +196,11 @@ main{
 #save{
     display: none;
 }
+
+#denunciar{
+    display: none;
+}
+*/
 
 .channel{
     grid-area: channel;
